@@ -32,9 +32,11 @@ function getCurrentTime() {
   let ampm = "AM";
 
   //setting time to 12 hr format
-  if (h > 12) {
-    h = h - 12;
+  if (h >= 12) {
     ampm = "PM";
+  }
+  if(h > 12){
+    h = h - 12;
   }
   //appending zeroes for values less than 10
   h = checkTime(h);
