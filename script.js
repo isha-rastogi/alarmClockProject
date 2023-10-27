@@ -4,7 +4,7 @@ let alarmList = []
 //initializing alarm ringtone
 let alarmRingtone = new Audio("audio/AlarmClockRingtone.mp3")
 
-//Refernece for input values
+//Reference for input values
 const hour = document.getElementById("hour");
 const minute = document.getElementById("minute");
 const second = document.getElementById("second");
