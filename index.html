@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Linking the css file -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body onload="getCurrentTime()">
+    <div class="container">
+        <!-- Heading section -->
+        <div>
+            <h1>Alarm Clock</h1>
+            <center><h6><i>-by Isha Rastogi</i></h6></center>
+        </div>
+        <!-- Current time section -->
+        <h1><div id="currTime">00:00:00 AM</div></h1>
+
+        <div class="setAlarmTime">
+            <!-- input section for setting alarm time -->
+            <form id="myClock">
+                <input type="number" id="hour" min="01" max="12" value="01">
+                <input type="number" id="minute" min="00" max="59" value="00">
+                <input type="number" id="second" min="00" max="59" value="00">
+                <select value="AM" id="ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </form>
+            <input type="submit" id="setAlarmButton" value="Set Alarm" onclick="setAlarm()">
+        </div>
+        <!-- List section to show all set alarms -->
+        <div class="list">
+            <ul id="alarmsList">
+            </ul>
+        </div>
+    </div>
+    <!-- Linking the javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
