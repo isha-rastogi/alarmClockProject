@@ -20,11 +20,6 @@ body{
     background-color:  #f9f2ad; 
 }
 
-img{
-    height: 200px;
-    width: 200px;
-}
-
 #currTime{
     padding: 5px;
     margin: 15px;
